@@ -210,6 +210,7 @@
      background: rgba(0, 0, 0, 0) !important;
      border-radius: 0;
      padding: 0;
+     /* bac */
  }
 
  .deleteIcon {
@@ -291,4 +292,19 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 22px;
+}
+.offcanvas-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 375px;
+    text-align: center;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: auto;
 }
