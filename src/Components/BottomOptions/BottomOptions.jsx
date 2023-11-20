@@ -1,11 +1,11 @@
 import React from "react";
 import styles from '@/styles/Minicard.module.css'
 import Image from "next/image";
-import call from "../../assets/images/call.svg";
-import globe from "../../assets/images/globe.svg";
-import location from "../../assets/images/location.svg";
-import mail from "../../assets/images/mail.svg";
-import S from "../../assets/images/S.svg";
+import call from "../../assets/Images/call.svg";
+import globe from "../../assets/Images/globe.svg";
+import location from "../../assets/Images/location.svg";
+import mail from "../../assets/Images/mail.svg";
+import S from "../../assets/Images/S.svg";
 
 const BottomOptions = ({ setOpen, setEnable, setOpenMail, setLocationEnable, setWebEnable, isShareCard, setPop }) => {
     console.log(setOpen)
