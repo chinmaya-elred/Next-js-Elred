@@ -5,7 +5,6 @@ import close from "../../../assets/Images/redclose.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
 import phone from "../../../assets/images/phonebg.svg";
 import { Spinner } from "react-bootstrap";
-import { Icon } from '@iconify/react';
 
 const PhoneNumberPopup = ({ number, setEnable, status }) => {
   const [backLoader, setbackLoader] = useState(true)
