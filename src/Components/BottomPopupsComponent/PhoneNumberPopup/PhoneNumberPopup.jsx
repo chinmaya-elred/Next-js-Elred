@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from '@/styles/Minicard.module.css'
 import close from "../../../assets/Images/redclose.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
-import phone from "../../../assets/images/phonebg.svg";
+import phone from "../../../assets/Images/phonebg.svg";
 import { Spinner } from "react-bootstrap";
 
 const PhoneNumberPopup = ({ number, setEnable, status }) => {

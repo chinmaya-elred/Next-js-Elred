@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from '@/styles/Minicard.module.css'
 import close from "../../../assets/Images/redclose.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
-import web from "../../../assets/images/websiteBg.svg";
+import web from "../../../assets/Images/websiteBg.svg";
 import { Spinner } from "react-bootstrap";
 
 

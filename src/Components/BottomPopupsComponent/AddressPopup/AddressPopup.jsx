@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from '@/styles/Minicard.module.css'
 import close from "../../../assets/Images/redclose.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
-import location from "../../../assets/images/locateBg.svg";
+import location from "../../../assets/Images/locateBg.svg";
 import { Spinner } from "react-bootstrap";
 
 const AddressPopup = ({ address, setLocationEnable, status,data }) => {

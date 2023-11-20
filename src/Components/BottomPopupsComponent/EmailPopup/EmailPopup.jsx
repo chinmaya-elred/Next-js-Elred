@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from '@/styles/Minicard.module.css'
 import close from "../../../assets/Images/redclose.svg";
 import LogoTitle from "../LogoTitle/LogoTitle";
-import emailLogo from "../../../assets/images/mailBg.svg";
+import emailLogo from "../../../assets/Images/mailBg.svg";
 import { Spinner } from "react-bootstrap";
 
 const EmailPopup = ({ email, setOpenMail, status }) => {
