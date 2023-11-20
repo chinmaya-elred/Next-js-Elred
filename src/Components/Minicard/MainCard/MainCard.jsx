@@ -4,6 +4,8 @@ import DesignationListProfile from "@/Components/Designation/Designation";
 import Badges from "@/Components/Badges/Badges";
 import BottomOptions from "@/Components/BottomOptions/BottomOptions";
 import CardBottomPopups from "@/Components/CardBottomPopups/CardBottomPopups";
+import CardBottomBranding from "@/Components/BottomBranding/BottomBranding";
+import TopSharing from "@/Components/TopSharing/TopSharing";
 
 const MainCard = ({ cardContent }) => {
     const [open, setOpen] = useState(false);
@@ -23,6 +25,7 @@ const MainCard = ({ cardContent }) => {
                 <div className={styles.minicard} style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${cardContent?.cardInfo?.[0]?.cardShortBgURL})` }}>
 
                     <div className="mainCardTop">
+                        <TopSharing/>
                         <img
                             src={cardContent?.dpURL}
                             alt="err"
@@ -42,11 +45,12 @@ const MainCard = ({ cardContent }) => {
                         </div>
                         <Badges badge={cardContent?.awards} />
                         <BottomOptions {...CardBottomPopupsProps}/>
+                        <CardBottomBranding/>
                     </div>
 
                 </div>
             </div>
-            <CardBottomPopups  {...CardBottomPopupsProps} />
+            <CardBottomPopups  {...CardBottomPopupsProps} data={cardContent}/>
         </>
     )
 }

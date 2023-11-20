@@ -15,16 +15,16 @@ const EmailPopup = ({ email, setOpenMail, status }) => {
 
   return (
     <div className={styles.outerdiv}  onClick={(e)=>e.stopPropagation()}>
-      <div className="skill-title">
-        <div className="title">Email ID</div>
-        <Spinner animation="border" variant="danger" size="sm" className={backLoader ? 'show-img-loader loader-close' : 'hide-img-loader'} />
+      <div className={styles.skilltitle}>
+        <div className={styles.title}>Email ID</div>
+        {/* <Spinner animation="border" variant="danger" size="sm" className={backLoader ? 'show-img-loader loader-close' : 'hide-img-loader'} /> */}
 
         <div className="close-btn">
-          <Image src={close} alt="" onClick={() => setOpenMail(false)}className={!backLoader ? 'show-img-loader' : 'hide-img-loader'} onLoad={() => setbackLoader(false)} />
+          <Image src={close} alt="" onClick={() => setOpenMail(false)}className={!backLoader ? styles.deleteIcon  : 'hide-img-loader'} onLoad={() => setbackLoader(false)} />
         </div>
       </div>
       <LogoTitle
-        logo={emailLogo}
+        logo={<Image src={emailLogo} alt="err" />}
         title={!status ? "Email not provided" : email}
         action={gotoMail}
         status={status}

@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '@/styles/Minicard.module.css'
 import { Offcanvas } from 'react-bootstrap'
 import PhoneNumberPopup from '../../BottomPopupsComponent/PhoneNumberPopup/PhoneNumberPopup'
 
@@ -6,7 +7,7 @@ const PhonePopupData = ({enable, setEnable, data}) => {
     return (
         <Offcanvas
             show={enable}
-            className="bottomPopSmall"
+            className={styles.bottompopup}
             placement="bottom"
             onClick={() => setEnable(false)}
         >
