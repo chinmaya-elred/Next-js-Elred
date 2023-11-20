@@ -20,8 +20,10 @@ export default PrerenderedPage;
 
 export async function getServerSideProps(context) {
   try {
+    console.log(context, 'aaaaaaaaa')
     const userCodeParam  = context.params.usercode; 
-    const userCode = userCodeParam ? userCodeParam.split('=')[1] : null;
+    // const userCode = userCodeParam ? userCodeParam.split('=')[1] : null;
+    const userCode = context.query.userCode
     console.log(userCode, 'usercode')
 
     // if (!userCode) {

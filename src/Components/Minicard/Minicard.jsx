@@ -7,7 +7,7 @@ import CardBottomPopups from "../CardBottomPopups/CardBottomPopups";
 import Head from 'next/head';
 
 const Minicard = ({ cardInfo }) => {
-    console.log(cardInfo, 'card')
+    // console.log(cardInfo, 'card')
     return (
         <>
             <Head>
@@ -15,6 +15,10 @@ const Minicard = ({ cardInfo }) => {
                 <meta property="og:title" content={cardInfo?.firstname + "'s"} Personal Card />
                 <meta property="og:description" content={cardInfo?.firstname + "'s"} Personal Card />
                 <meta property="og:image" content={cardInfo?.cardInfo?.[0]?.cardShortBgURL} />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="300" />
+                <meta property="og:image:height" content="300" />
+
                 {/* Add other meta tags if needed */}
             </Head>
 
